@@ -13,8 +13,8 @@
     <context:component-scan base-package="com.ssg.springex.sample"/>
 
     <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ssgdb?serverTimezone=UTC"></property>
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ssgdb?serverTimezone=UTC"/>
         <property name="username" value="root"/>
         <property name="password" value="root"/>
         <property name="connectionTimeout" value="30000"/>
@@ -26,6 +26,7 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:/mappers/**/*.xml"/>
     </bean>
     <mybatis:scan base-package="com.ssg.springex.mapper"></mybatis:scan>
 </beans>
