@@ -55,6 +55,12 @@ dependencies {
     // ModelMapper
     implementation("org.modelmapper:modelmapper:3.0.0")
 
+    // MyBatis
+    implementation group: 'org.springframework', name: 'spring-jdbc', version: '5.3.27'
+    implementation group: 'org.springframework', name: 'spring-tx', version: '5.3.27'
+    implementation 'org.mybatis:mybatis:3.5.7'
+    implementation 'org.mybatis:mybatis-spring:2.0.6'
+
     // JSTL 의존성
     implementation 'jstl:jstl:1.2'
 }
