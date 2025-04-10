@@ -27,6 +27,14 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 
+    // Spring Core
+    implementation 'org.springframework:spring-core:5.3.27'
+    implementation 'org.springframework:spring-context:5.3.27'
+    // Spring WebMVC
+    implementation 'org.springframework:spring-webmvc:5.3.27'
+    // Spring Test
+    implementation 'org.springframework:spring-test:5.3.27'
+
     // MySQL 커넥터
     implementation "mysql:mysql-connector-java:8.0.17"
 
